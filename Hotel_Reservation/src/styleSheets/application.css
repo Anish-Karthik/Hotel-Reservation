@@ -1,0 +1,51 @@
+
+.root{
+	-fx-background-color: #FAFAFE;
+}
+
+.button{
+	-fx-border-color:none;
+	-fx-background-color:#00AAFF;
+	-fx-border-radius: 20%;
+	
+}
+
+.label{
+	-fx-font-size: 18;
+	-fx-font-style: italic;
+	-fx-font-weight: bold;
+	-fx-font-family: "System";
+	-fx-text-fill: "black";
+
+}
+
+.titleLabel{
+	-fx-font-size: 40;
+	-fx-font-style: none;
+	-fx-font-weight: none;
+	-fx-font-family: "Algerian";
+	-fx-text-fill: "red";
+}
+
+.heading{
+	-fx-font-size: 33;
+	-fx-font-family: "System";
+	-fx-text-fill: "red";
+}
+.textArea{
+	-fx-font-size: 14;
+	-fx-font-family: "lucida-console";
+	-fx-text-fill: "orange";
+}
+.choiceBox{
+	-fx-border-color:none;
+	-fx-background-color:#00AAFF;
+	-fx-border-radius: 20%;
+}
+.error{
+	-fx-font-size: 14;
+	-fx-font-style: italic;
+	-fx-font-weight: none;
+	-fx-font-family: "lucida-console";
+	-fx-text-fill: "red";
+}

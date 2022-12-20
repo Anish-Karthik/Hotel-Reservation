@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Booking">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Open…" />
+                  <Menu mnemonicParsing="false" text="Open Recent" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences…" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Unselect All" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="194.0" layoutY="43.0" text="Single Rooms">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="54.0" prefHeight="27.0" prefWidth="16.0" text="\$">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="40.0" layoutY="320.0" mnemonicParsing="false" onAction="#gotoMenu" text="Booking Menu">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="364.0" layoutY="269.0" text="Total price :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="noOfRoomsSelected" layoutX="237.0" layoutY="266.0" prefHeight="39.0" prefWidth="37.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" layoutX="472.0" layoutY="264.0" prefHeight="39.0" prefWidth="74.0" text="0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="108.0" prefHeight="39.0" prefWidth="212.0" text="No of rooms  available :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="147.0" prefHeight="39.0" prefWidth="171.0" text="How many rooms  :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="available" layoutX="255.0" layoutY="108.0" prefHeight="39.0" prefWidth="37.0" text="15">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomCount" layoutX="218.0" layoutY="154.0" onAction="#refresh" promptText="Enter rooms required">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="365.0" layoutY="317.0" mnemonicParsing="false" onAction="#book" prefHeight="46.0" prefWidth="99.0" text="Book">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="datePicker" layoutX="218.0" layoutY="196.0" onAction="#refresh" promptText="Enter date" />
+      <Label layoutX="79.0" layoutY="187.0" prefHeight="39.0" prefWidth="132.0" text="check in date :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="265.0" prefHeight="39.0" prefWidth="194.0" text="No. of rooms selected :">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="53.0" prefHeight="27.0" prefWidth="66.0" text="per day">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cost" layoutX="476.0" layoutY="54.0" prefHeight="27.0" prefWidth="43.0" text="100">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="roomError" layoutX="406.0" layoutY="155.0" prefHeight="25.0" prefWidth="110.0" styleClass="error" text=" " textFill="RED">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateError" layoutX="409.0" layoutY="196.0" prefHeight="25.0" prefWidth="110.0" styleClass="error" text=" " textFill="RED">
+         <font>
+            <Font name="System Italic" size="10.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="40.0" layoutY="50.0" prefHeight="39.0" prefWidth="39.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@refresh.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#refresh" opacity="0.0" prefHeight="43.0" prefWidth="49.0" text="Button" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

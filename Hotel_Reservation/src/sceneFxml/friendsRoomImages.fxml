@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginPage">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane prefHeight="585.0" prefWidth="900.0">
+         <children>
+            <Text layoutX="254.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: red;" styleClass="heading" text="FRIENDS ROOM" underline="true">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="232.0" fitWidth="291.0" layoutY="118.0">
+               <image>
+                  <Image url="@../imageSource/house-flipper-april-fool-friends-moniac-rachel-apartment.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="232.0" fitWidth="313.0" layoutX="294.0" layoutY="118.0">
+               <image>
+                  <Image url="@../imageSource/cdn.cliqueinc.com__cache__posts__199687__tv-inspired-decor-what-the-friends-apartments-would-look-like-today-1860762-1470439233.700x0c-1f4dc922d9da41ab8cbd3f4de43a2dfc.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="232.0" fitWidth="291.0" layoutX="611.0" layoutY="118.0">
+               <image>
+                  <Image url="@../imageSource/1466781614-gettyimages-138422680-2000.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="387.0" layoutY="407.0" mnemonicParsing="false" onAction="#gotoFriendsRoom" text="BOOK NOW">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="39.0" layoutY="503.0" mnemonicParsing="false" onAction="#gotoViewRoom" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Line endX="-7.62939453125E-6" endY="1.8310546875E-4" layoutX="82.0" layoutY="536.0" startX="-42.30709457397461" startY="1.220703125E-4" />
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>
