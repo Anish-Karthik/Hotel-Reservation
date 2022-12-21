@@ -12,6 +12,10 @@
 
 
 ## Future improvements
-* improving style - adding much attractive colors, font style, and design 
-* flexibility - making application controls expand and size according to screen resizing 
-* versatility - to make it store all details in an database to implement. 
+* improving style - adding much attractive colors, font style, and design.
+* flexibility - making application controls expand and size according to screen resizing. 
+* versatility - to implement database to make it store all details. 
+* features - auto load, cancel and develop a web application.
+
+## How to run
+Download the project and run the Main.java, but installation of java19 and javaFX sdk19 required. 
