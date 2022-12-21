@@ -11,6 +11,6 @@ Framework: javaFX
 
 
 # Future improvements
-improving style - adding much attractive colors, font style, and design ; 
-flexibility - making application controls expand and size according to screen resizing ;
-versatility - to make it store all details in an database to implement. ;
+* improving style - adding much attractive colors, font style, and design ; 
+* flexibility - making application controls expand and size according to screen resizing ;
+* versatility - to make it store all details in an database to implement. ;
