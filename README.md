@@ -1,6 +1,6 @@
 # Hotel-Reservation
 
-## Description: 
+### Description
   It is a hotel reservation application made for desktop to book the rooms online from your local desktop. It is developed by java and for the frontend GUI is built using javaFX framework. Has features of register, login, review, history, book and profile. It is at the beginning stage.
 
 
